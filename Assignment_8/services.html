@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="https://kit.fontawesome.com/8fd6721854.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="PageContainer">
+        <div class="InnerContainer">
+            <div class="TopSection">
+                <header class="PageHeader">
+                    <p class="HeaderList"><a class="Separate">Request a Quote</a>  <a class="Separate">Client Login</a>  <a>Vehicle Export Portal</a></p>
+                </header>
+                </div>
+                <nav class="NavBar">
+                    <img class="GlobeImg" src="images/logo.png" alt="logo">
+                    <div class="border-nav">
+                        <ul class="NavList">
+                            <li class="NavListItem"><a href="index.html">Home</a></li>
+                            <li class="NavSeparation"></li>
+                            <li class="NavListItem"><a href="#">About FTZWS</a></li>
+                            <li class="NavSeparation"></li>
+                            <li class="NavListItem"><a href="services.html">Our Services</a></li>
+                            <li class="NavSeparation"></li>
+                            <li class="NavListItem"><a href="#">Our Clients</a></li>
+                            <li class="NavSeparation"></li>
+                            <li class="NavListItem"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                
+            <section class="ServiceArticleSection">
+                <div class="ServiceFadingBorder">
+                    <section id="SearchBarSection">
+                        <input id="searchInput" type="text" label="SearchBar" placeholder="search">
+                    </section>
+
+                    <section>
+                    <table id="TableSection">
+                        <thead>
+                            <td><input type="checkbox" id="checkbox-head"></td>
+                            <td>NAME</td>
+                            <td>SCORE</td>
+                            <td>EMAIL</td>
+                            <td></td>
+                        </thead>
+
+                        <tbody>
+
+                        </tbody>
+                        
+                    </table>
+                    </section>
+
+                    <section id="CalculateSection">
+                        <input id="cal" class="calculateButton" type="button" value="Calculate">
+                        <span class="calculateItem">Average:</span><span id="AvgValue"></span>
+                        <span class="calculateItem">Max:</span><span id="MaxValue"></span>
+                    </section>
+
+                </div>
+            </section>
+
+            <div class="TransparentBackground">
+                <footer class="CopyRight">
+                    <p class="EndContent">
+                        Copyright &#169; 2010 FTZ World Services. All rights reserved. <a href="#">Contact Us</a> | <a href="#">Request a Quote</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/clients.js"></script>
+</body>
+</html>

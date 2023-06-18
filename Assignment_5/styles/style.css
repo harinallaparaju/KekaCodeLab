@@ -1,0 +1,285 @@
+body {
+    margin: 0px;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.header {
+    height:88px;
+}
+
+.page-title {
+    background-color: #3399CC;
+    margin:0;
+    color:white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 100;
+    height: 91px;
+    padding: 20px 0px 0px 20px;
+    font-size:39px;
+    text-transform: uppercase;
+}
+
+.career-info-heading {
+    margin-right: 0;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.career-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+section.career-info-section {
+    padding-left: 45px;
+}
+
+section.career-form-section {
+    padding-left: 30px;
+}
+
+#formRow span {
+    font-size: 9px;
+    color: red;
+    padding-left: 10px;
+}
+
+#InvalidSubmit {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+}
+
+#InvalidCareerSubmit {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+}
+
+#ContactNameError, #ContactEmailError, #ContactOrgNameError {
+    color: red;
+    margin-left: 10px;
+}
+
+.text-box {
+    overflow-y: scroll;
+}
+
+.input-bar {
+    height: 19px;
+    width: 133px;
+}
+
+.submit-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 48px 4px 9px;
+}
+
+.browse-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 14px;
+    padding: 4px 10px 4px 10px;
+}
+
+.nav-bar {
+    background-color: #333;
+    height: 28px;
+}
+
+.nav-list {
+    margin:0;
+    display: flex;
+    padding-left: 20px;
+}
+
+.nav-list-item {
+    padding-right: 20px;
+    list-style: none;
+    font-weight:bold;
+    padding-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.active {
+    padding-right: 20px;
+    list-style: none;
+    font-weight:bold;
+    padding-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: black;
+    background-color: rgb(255, 153, 0);
+    padding: 7px 8px;
+    margin-right: 19px;
+    border-left: 3px solid white;
+}
+
+.active a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-item a:active {
+    color: black;
+    background-color: rgb(255, 153, 0);
+    padding: 7px 8px;
+    border-left: 3px solid white;
+
+}
+
+.blog-img {
+    padding:4px 0px 6px 1168px;
+    width:19px;
+    height:19px;
+}
+
+.content {
+    border: 2px groove;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 922px;
+    width: 569px;
+}
+
+.content-title {
+    margin:0;
+    padding-left: 13px;
+    padding-top: 7px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.content-list {
+    list-style-type: '-  ';
+    padding-left: 21px;
+    font-size:11px;
+    margin:8px;
+    margin-bottom: 4px;
+}
+
+.content-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.content-list-item {
+    padding-bottom: 12px;
+}
+
+.info-title {
+    padding-left: 41px;
+    margin-top: 19px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info {
+    padding-left: 41px;
+    font-size: 11.5px;
+    padding-right: 180px;
+    padding-top: 0px;
+    width: 56.5%;
+}
+
+#browse {
+    visibility: hidden;
+}
+
+table.invalid-submit {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#formTable {
+    display: table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-bottom: 19px;
+    font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 23px 17px;
+}
+
+#formRow {
+    display: table-row;
+}
+
+.label, .input-bar {
+    display: table-cell;
+}
+
+#gridFormTop {
+    display: table;
+}
+
+#formTableContact {
+    display: table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 23px 17px;
+}
+
+#formRowContact {
+    display: table-row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#gridFormTopContact {
+    display: table;
+    margin-top: 15px;
+
+}
+
+#formRowContactInfo {
+    display: table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 23px 17px;
+}
+
+#formTableContact2 {
+    display: table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 23px 17px;
+}
+
+#formTableContact3 {
+    display: table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 23px 17px;
+}
+
+#FileName{
+    visibility: hidden ;    
+ }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="page-title">Address Book</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html">Home</a></li>
+                <li id="ToggleButton" class="nav-list-item"><a href="add.html">+ADD</a></li>
+                <img class="blog-img" src="images/blog-icon.png" alt="Blog"/>
+
+            </ul>
+        </nav>
+
+        <h4 class="contact-heading">CONTACTS</h4>
+
+        <div class="contacts-section" id="contactSection">
+
+            <div class="contact-details" id="contactDetails">
+            
+            </div>
+
+            <div class="contacts-complete-details" id="contactCompleteDetails">
+
+            </div>
+        
+            <div id="myForm" class="form-border-shadow" style = "display: none;">
+                <form id="form">
+                    <div id="formTable">
+                        <div id="formRow">
+                            <p class="grid-for-form"><label class="label">Name</label></p>
+                            <p><input class="input-bar" name="input-1" type="text" id="Name"><span class="validate-form" id="NameError">*</span></p>
+                        </div>
+
+                        <div id="formRow">
+                            <p class="grid-for-form"><label class="label">Email</label></p>
+                            <p><input class="input-bar"  name="input-2" type="text" id="Email"><span class="validate-form" id="EmailError">*</span></p>
+                        </div>
+
+                        <div id="formRow">
+                        
+                            <p class="grid-for-form">
+                            <label class="label">Mobile</label>
+                            <label class="label" id="landlineLabel">Landline</label>
+                            </p>
+
+                            <p><input class="input-bar" name="input-3" type="text" id="Mobile"> <input class="input-bar" name="input-4" type="text" id="Landline"></p>
+                            <p><span class="validate-form" id="MobileError">*</span></p>
+                        
+                        
+                        </div>
+
+                        <div id="formRow">
+                            <p class="grid-for-form"><label class="label">Website</label></p>
+                            <p><input class="input-bar" name="input-5" type="text" id="Website"></p>
+                        </div>
+
+                        <div id="formRow">
+                            <p class="grid-for-form"><label class="label">Address</label></p>
+                            <p><textarea id="text-box" name="text-box" class="text-box" rows="6" cols="54" id="Address"></textarea></p>
+
+                        </div>
+
+                        <div id="formRow">
+                            <input type="button" class="add-button" value="Save" id="SaveButton">
+                            <input type="button" class="add-button" value="Add" id="addButton">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="page-title">Technovert</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html">Home</a></li>
+                <li class="nav-list-item"><a href="">Services</a></li>
+                <li class="nav-list-item"><a href="careers.html">Careers</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <img class="blog-img" src="images/blog-icon.png" alt="Blog"/>
+
+            </ul>
+        </nav>
+
+        <section class="career-form-section">
+            <form id="myForm">
+        
+                <div id="gridFormTopContact">
+                    <td><span id="InvalidSubmit"></span></td>
+                </div>
+            
+
+            <div id="formTableContact">
+                <div id="formRowContact">
+                    <label class="label">Gender:</label>
+                    <p><input id="male" type="radio" name="option" onchange="alert('Hello Sir')"></input><label for="male">Male</label> <input id="female" type="radio" name="option" onchange="alert('Hello Lady')"></input><label for="female">Female</label></p>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My Name:</label>
+                    <input class="input-bar" type="text" id="ContactName" onkeyup=" return validateContactName();validateContactDetails()">
+                    <span id="ContactNameError">*</span>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My Email Address:</label>
+                    <input class="input-bar" type="email" id="ContactEmail" onkeyup="validateContactEmail();validateContactDetails()">
+                    <span id="ContactEmailError">*</span>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My Telephone Number:</label>
+                    <input class="input-bar" type="text" id="role">
+                    <span id="contact-phone-error"></span>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My Organization Name:</label>
+                    <input class="input-bar" type="text" id="NameOrg" onkeyup="validateOrg();validateContactDetails()">
+                    <span id="ContactOrgNameError">*</span>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My City:</label>
+                    <input class="input-bar" type="text">
+                    <span id="contact-city-error"></span>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">My State or Province:</label>
+                        <select name="state" id="State" onchange="getPromo()">
+                            <option selected disabled name="Select State or Province">Select State or Province</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                          </select>
+                </div>
+
+
+                <div id="formRowContact">
+                    <label class="label">Please Contact Me By:</label>
+                            <p><input id="email" type="radio" name="option"></input><label for="email">Email</label></p>
+                            <p><input id="phone" type="radio" name="option"></input><label for="phone">Phone</label></p> 
+                            <p><input id="both" type="radio" name="option"></input><label for="both">Both</label></p>
+                </div>
+
+                <div id="formRowContact">
+                    <label class="label">Promotion Code:</label>
+                    <input class="input-bar" type="text" id="PromoCode">
+                    <span id="ContactPromoError"></span>
+                </div>
+            </div>
+
+            <div id="formRowContactInfo">
+                    <p>Optional Information</p>
+                    <p><em>This information is optional but it helps us to serve you better.</em></p>
+            </div>
+
+            <div id="formTableContact2">
+                
+                <div id="formRowContact">
+                    <label class="label" id="websiteAddress">My Website Address is:</label>
+                    <input class="input-bar" type="text">
+                    <span id="ContactAddrError"></span>
+                </div>
+            </div>
+
+            <div id="formTableContact3">
+                
+                <div id="formRowContact">
+                <p><label class="label">Tell Us More About Your Organization:</label></p>
+                <p><textarea id="text-box" name="text-box" class="text-box" rows="6" cols="35"></textarea></p>
+                <p><label class="label">What I'd really like to know is:</label></p>
+                <p><textarea id="text-box" name="text-box" class="text-box" rows="6" cols="35"></textarea></p>
+                </div>
+
+                <div>
+                <input type="submit" onclick="return validateSubmit()" value= "Send Message"/> <input type="button" onclick="clearForm()" value="Clear Form"/>
+                </div>
+            </div>
+
+            </form>
+        </section>
+    </div>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

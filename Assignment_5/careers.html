@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="page-title">Technovert</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html">Home</a></li>
+                <li class="nav-list-item"><a href="">Services</a></li>
+                <li class="active"><a href="careers.html">Careers</a></li>
+                <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+                <img class="blog-img" src="images/blog-icon.png" alt="Blog"/>
+
+            </ul>
+        </nav>
+
+        <section class="career-info-section">
+            <h3 class="career-info-heading">Careers at Technovert</h3>
+            <p class="career-info">We are looking for smart people who love fiddling with code and pour their heart into it. If you are one, we would
+                like to talk to you. Please fill <p class="career-info">the form below and we will get back to you.</p>
+            </p>
+        </section>
+
+        <section class="career-form-section">
+            <form>
+
+                <div class="invalid-career-submit" id="gridFormTop">
+                    <span id="InvalidCareerSubmit"></span>
+                </div>
+                
+                <div id="formTable">
+                <div id="formRow">  
+                    <label class="label">Name</label>
+                    <input class="input-bar" type="text" id="Name">
+                    <span id="NameError" class="formGridItem">*</span>
+                </div>
+
+                <div id="formRow">
+                    <label class="label">Email</label>
+                    <input class="input-bar" type="email" id="Email">
+                    <span id="EmailError" class="formGridItem">*</span>
+                </div>
+                
+                <div id="formRow">
+                    <label class="label">Desired Role</label>
+                    <input class="input-bar" type="text" id="Role">
+                    <span id="RoleError" class="formGridItem">*</span>
+                </div>
+                
+                <div id="formRow">
+                    <label class="label">Upload Resume</label>
+                    <input id="FileText" class="input-bar" type="text">
+                    <input type="button" id="BrowsBtn" class="browse-button" value="Browse..." onclick='document.getElementById("FileName").click()'>
+                    <input onchange="File()" type="file" id="FileName">
+                </div>
+
+                <div id="formRow">
+                    <div class="label"></div>
+                    <button id="SubmitCheckCareer" class="submit-button">Submit</button>
+                </div>
+
+            </div>
+            </form>
+        </section>
+    </div>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

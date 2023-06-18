@@ -1,0 +1,235 @@
+body {
+    margin: 0px;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.header {
+    height:88px;
+}
+
+.page-title {
+    background-color: #3399CC;
+    margin:0;
+    color:white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 100;
+    height: 91px;
+    padding: 20px 0px 0px 20px;
+    font-size:39px;
+}
+
+.nav-bar {
+    background-color: #333;
+    height: 28px;
+}
+
+.nav-list {
+    margin:0;
+    display: flex;
+    padding-left: 20px;
+}
+
+.nav-list-item {
+    padding-right: 20px;
+    list-style: none;
+    font-weight:bold;
+    padding-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.nav-list-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.blog-img {
+    position: absolute;
+    right: 1%;
+    padding-top: 4px;
+    width:19px;
+    height:19px;
+}
+
+.contact-heading {
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 1%;
+}
+
+#formTable {
+    font-size: 9px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1%;
+    padding: 20px 20px 40px 20px;
+}
+
+#Landline {
+    margin-left: 1%;
+}
+
+#landlineLabel {
+    margin-left: 36.2%;
+}
+
+.grid-for-form {
+    padding: 0px;
+    margin: 2px;
+}
+
+.form-border-shadow {
+    position: absolute;
+    box-shadow: 0 0 5px 5px rgb(174, 174, 174);
+    margin-left: 27%;
+    width: 38%;
+}
+
+.add-button {
+    background-color: rgb(70, 140, 0);
+    position: relative;
+    left: 77%;
+    color: white;   
+    border: none;
+    padding: 5px 5px;
+    width: 18%;
+    height: 5%;
+    cursor: pointer;
+}
+
+#Name, #Email, #Website {
+    width: 418px;
+    height: 32px;
+}
+
+#Mobile, #Landline {
+    width: 201px;
+    height: 32px;
+}
+
+.contact-details-item {
+    border: 1px solid black;
+    height: 72px;
+    width: 308px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 2% 3% 0% 3%;
+}
+
+.contacts-section {
+    display: flex;
+}
+
+.contact-details {
+    margin-left: 1%;
+}
+
+.contact-name {
+    font-size: 23px;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-line;
+}
+
+.contact-email {
+    font-size: 10px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 2%;
+    white-space: pre-line;
+}
+
+.contact-mobile {
+    font-size: 10px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 2%;
+    white-space: pre-line;
+}
+
+.contacts-complete-details {
+    margin-left: 6%;
+}
+
+#DetailsListName {
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+
+#DetailsListEmail {
+    margin-bottom: 3%;
+}
+
+#DetailsListLandline {
+    margin-bottom: 3%;
+}
+
+#DetailsListEmail, #DetailsListMobile, #DetailsListLandline, #DetailsListWebsite, #DetailsListAddress {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+.selected {
+    background-color: "rgb(206, 231, 242)";
+}
+
+#selected-content {
+    width: 200%;
+}
+
+#editButton {
+    margin-left: 18%;
+}
+
+#editButton, #deleteButton {
+    font-size: 13px;
+    margin-right: 5%;
+}
+
+/* #imgEdit {
+    height: 2%;
+    width: 2%;
+}
+
+#imgDelete {
+    height: 2%;
+    width: 2%;
+} */
+
+.contact-details-item:hover {
+    background-color: rgb(206, 231, 242);
+    cursor: pointer;
+}
+
+/* #clickDiv {
+    background-color: rgb(206, 231, 242);
+} */
+
+.img-edit {
+    height: 12px;
+    width: 10px;
+    margin-left: 20%;
+    margin-right: 0.8%;
+}
+
+.img-delete {
+    height: 17px;
+    width: 11px;
+    margin-right: 0.8%;
+}
+
+.text-edit {
+    margin-right: 5%;
+}
+
+.text-edit, .text-delete {
+    font-size: 11.5px;
+}
+
+.validate-form {
+    position: relative;
+    left: 1%;
+    font-size: 10px;
+    color: red;
+}
