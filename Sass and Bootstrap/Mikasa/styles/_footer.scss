@@ -1,0 +1,79 @@
+$footer-font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+$footer-font-color: rgba(255, 255, 255, 0.486);
+@import 'mixins';
+
+.home-footer {
+    display: flex;
+    margin-left: 33.3%;
+    color: $footer-font-color;
+
+    .footer-left {
+        font-size: 9px;
+        width: 400px;
+        position: relative;
+        right: 12.1%;
+
+        .footer-left-list {
+            @include list-style;
+            padding-left: 0px;
+
+            a {
+                color: $footer-font-color;
+            }
+
+            .footer-list-item {
+                display: flex;
+                justify-content: space-around;
+                padding-left: 0px;
+                padding-right: 10px;
+                font-size: 10px;
+            }
+
+            .footer-separation::after {
+                content: "|";
+                color: $footer-font-color;
+                padding-right: 10px;
+            }
+        }
+
+        .footer-left-info {
+            font-size: 9px;
+            margin-top: 0px;
+            margin-bottom: 3px;
+            font-family: $footer-font;
+
+            a {
+                color: $footer-font-color;
+                font-family: $footer-font;
+            }
+        }
+    }
+
+    .footer-right {
+        font-size: 9px;
+        margin-left: 0.5%;        
+
+        .footer-right-info {
+            font-size: 9px;
+            margin-bottom: 8px;
+            font-family: $footer-font;
+        }
+
+        .footer-email {
+            height: 16px;
+            width: 137px;
+            font-size: 9px;
+            color: rgba(0, 0, 0, 0.438);
+        }
+
+        .footer-signup {
+            height: 15px;
+            width: 47px;
+            font-size: 7px;
+            border-radius: 15%;
+            border: 0.5px solid grey;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    }
+}

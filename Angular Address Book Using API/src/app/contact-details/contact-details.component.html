@@ -1,0 +1,9 @@
+<div class="contact-details" id="ContactDetails">
+    <div class="contact-name"> {{userDetails.userName}} <span class="text-edit" [routerLink]="['/list/edit',id]"><img class="img-edit" src="../assets/edit1.jpg">EDIT</span><span class="text-delete" routerLink = "/home" (click)="deleteUser()"><img class="img-delete" src="../assets/delete1.png">DELETE</span></div>
+    <div class="contact-email"> Email: {{userDetails.userEmail}} </div>
+    <div class="contact-mobile"> Mobile: {{userDetails.userMobile}} </div>
+    <div class="contact-landline"> Landline: {{userDetails.userLandline}} </div>
+    <div class="contact-website"> Website: {{userDetails.userWebsite}} </div>
+    <div class="contact-address"> Address: {{userDetails.userAddress}} </div>
+</div>
+

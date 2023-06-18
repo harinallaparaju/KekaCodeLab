@@ -1,0 +1,50 @@
+@import 'mixins';
+
+.home-nav {
+    
+    @include nav-styles;
+
+    .nav-list {
+        @include list-style;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        padding: 4px 0px 4px 1px;
+        padding-left: 24.6%;
+
+        .nav-list-item {
+            border-right: 1px solid rgba(255, 255, 255, 0.527);
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 9px;
+                padding-left: 14px;
+                padding-right: 13px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+
+        .nav-search-box {
+            padding-left: 4%;
+
+            .search-bar {
+                height: 15px;
+                width: 130px;
+                font-size: 9px;
+                color: rgba(0, 0, 0, 0.438);
+            }
+
+            .submit-button {
+                margin-top: 4px;
+                margin-left: 3px;
+                border-radius: 20%;
+                background-color: white;
+                border: 0.5px solid grey;
+                cursor: pointer;
+                padding-left: 2px;
+                font-size: 8px;
+                width: 1.2rem;
+            }
+        }
+    }
+}

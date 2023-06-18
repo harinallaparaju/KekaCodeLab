@@ -1,0 +1,23 @@
+{
+  "userList": [
+    {
+      "userName": "Chandermani Arora",
+      "userEmail": "chandermani@technovert.com",
+      "userMobile": "+91 9292929292",
+      "userLandline": "",
+      "userWebsite": "",
+      "userAddress": "",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

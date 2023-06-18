@@ -1,0 +1,55 @@
+@use 'mixins';
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    min-width: 300px;
+    max-width: 780px;
+    height: 138px;
+    position: relative;
+    left: 25.3%;
+    outline: 7px solid black;
+    outline-offset: -4px;
+    margin-top: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    .bottom-section-left {
+        background-image: url(promo_glass.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 80% 100%;
+        width: 262px;
+        padding-left: 21px;
+        border-right: 1px solid rgba(0, 0, 0, 0.171);
+        padding-right: 6px; 
+
+        @include mixins.bottom-left;
+    }
+
+    .bottom-section-center {
+        background-image: url(promo_plates.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 99% 80%;
+        width: 256px;
+        padding-left: 19px;
+        margin-right: -9px;
+        border-right: 1px solid rgba(0, 0, 0, 0.171);
+        margin-bottom: 0px;
+
+        @include mixins.bottom-center;
+    }
+
+    .bottom-section-right {
+        background-image: url(promo_album.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 59% 93%;
+        width: 268px;
+        padding-left: 19px;
+        padding-top: 12px;
+
+        @include mixins.bottom-right;
+    }
+}

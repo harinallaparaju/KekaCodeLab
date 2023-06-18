@@ -1,0 +1,49 @@
+@use 'reset';
+@use 'nav';
+@use 'info';
+@use 'article';
+@use 'bottom';
+@use 'footer';
+@use 'mixins';
+
+.home-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+
+    .logo-mikasa {
+        position: absolute;
+        height: 5%;
+        width: 7.5%;
+        left: 25%;
+    }
+
+    .header-list {
+        @include mixins.list-style;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        gap: 5px;
+        margin-left: 18%;
+        padding-top: 4px;
+
+        .cart-img {
+            height: 0.8em;
+            margin-top: -3px;
+        }
+
+        .header-separation {
+            border-right: 0.5px solid #80808050;
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+
+        .header-list-item {
+            color: grey;
+            font-size: 0.55em;
+
+            a {
+                color: grey;
+                text-decoration: none;
+            }
+        }
+    }
+}   

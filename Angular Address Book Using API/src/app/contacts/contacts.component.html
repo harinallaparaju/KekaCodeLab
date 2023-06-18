@@ -1,0 +1,11 @@
+<ng-container>
+    <div class="contact-list" id="SelectContact" routerLinkActive = "active" *ngFor="let user of userData">
+        <a class="fill-div" routerLink="/list/details/{{user.id}}">
+        <div class="contact-name">{{user.userName}}</div>
+        <div class="contact-email">{{user.userEmail}}</div>
+        <div class="contact-mobile">{{user.userMobile}}</div>
+        </a>
+    </div>
+</ng-container>
+
+<router-outlet></router-outlet>

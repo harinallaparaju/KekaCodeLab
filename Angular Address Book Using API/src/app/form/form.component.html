@@ -1,0 +1,43 @@
+<div id="myForm" class="form-border-shadow">
+    <form id="form" [formGroup]="Form">
+        <div id="formTable">
+            <div id="formRow">
+                <p class="grid-for-form"><label class="label">Name</label></p>
+                <p><input class="input-bar" type="text" id="Name" formControlName="userName"><span *ngIf="Form.get('userName')?.errors && Form.get('userName')?.touched" class="validate-form" id="NameError">Name is required</span></p>
+            </div>
+
+            <div id="formRow">
+                <p class="grid-for-form"><label class="label">Email</label></p>
+                <p><input class="input-bar"  type="text" id="Email" formControlName="userEmail"><span *ngIf="Form.get('userEmail')?.errors && Form.get('userEmail')?.touched" class="validate-form" id="EmailError">Email is required</span></p>
+            </div>
+
+            <div id="formRow">
+            
+                <p class="grid-for-form">
+                <label class="label">Mobile</label>
+                <label class="label" id="landlineLabel">Landline</label>
+                </p>
+
+                <p><input class="input-bar" type="text" id="Mobile" formControlName="userMobile"> <input class="input-bar" type="text" id="Landline" formControlName="userLandline"></p>
+                <p><span *ngIf="Form.get('userMobile')?.errors && Form.get('userMobile')?.touched" class="validate-form" id="MobileError">Mobile is required</span></p>
+            
+            
+            </div>
+
+            <div id="formRow">
+                <p class="grid-for-form"><label class="label">Website</label></p>
+                <p><input class="input-bar" type="text" id="Website" formControlName="userWebsite"></p>
+            </div>
+
+            <div id="formRow">
+                <p class="grid-for-form"><label class="label">Address</label></p>
+                <p><textarea id="text-box" formControlName="userAddress" class="text-box" rows="6" cols="54" id="Address"></textarea></p>
+
+            </div>
+
+            <div id="formRow">
+                <button type="submit" class="add-button" routerLink="/home" [innerHTML]="isAddMode ? 'Add' : 'Update'" (click)="isAddMode ? addUser() : updateUser(Form.value)"></button>
+            </div>
+        </div>
+    </form>
+</div>

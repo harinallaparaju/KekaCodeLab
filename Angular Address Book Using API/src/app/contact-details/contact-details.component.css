@@ -1,0 +1,50 @@
+.contact-details {
+    position: absolute;
+    left: 21.5%;
+    top: 20%;
+    margin-left: 6%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.contact-name {
+    font-size: 25px;
+    margin-bottom: 0.7%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-email {
+    margin-bottom: 0.7%;
+}
+
+.contact-landline {
+    margin-bottom: 0.7%;
+}
+
+.contact-website {
+    margin-bottom: 0.7%;
+}
+
+.contact-email, .contact-mobile, .contact-landline, .contact-website, .contact-address {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-edit {
+    height: 12px;
+    width: 10px;
+    padding-left: 0.5%;
+    padding-right: 0.3%;
+}
+
+.img-delete {
+    height: 17px;
+    width: 11px;
+    padding-left: 0.7%;
+    padding-right: 0.3%;
+}
+
+.text-edit, .text-delete {
+    font-size: 11.5px;
+    cursor: pointer;
+}

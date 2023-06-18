@@ -1,0 +1,34 @@
+@import 'mixins';
+
+.info-bar {
+    display: flex;
+    border-bottom: 0.5px groove rgba(0, 0, 0, 0.103);
+
+    .info-list {
+        @include list-style;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        gap: 9px;
+        font-size: 9.5px;
+        color:rgba(107, 127, 151, 0.918);
+        margin-left: 22.9%;
+        margin-bottom: 0px;
+
+        .info-separation::after {
+            content: "○";
+        }
+
+        .logo-register {
+            position: relative;
+            left: 35.5%;
+            height: 32px;
+            width: 60px;
+            margin-top: -9px;
+        }
+
+        .info-bridal-img {
+            position: relative;
+            left: 34%;
+            font-size: 9.5px;
+        }
+    }
+}
